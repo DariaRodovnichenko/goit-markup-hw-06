@@ -117,13 +117,14 @@ ul {
 }
 
 .menu-link:hover,
-.menu-link:focus {
+.menu-link:focus,
+.menu-link:active {
   color: #404bbf;
-  text-decoration: underline #404bbf;
 }
 
 .current {
   position: relative;
+  color: #404bbf;
 }
 
 .current::after {
@@ -534,7 +535,6 @@ ul {
   padding-bottom: 8px;
   padding-left: 16px;
   color: #ffffff;
-  margin-right: 24px;
 }
 
 .subscription-input::placeholder {
@@ -562,6 +562,7 @@ ul {
   border: 1px solid transparent;
   cursor: pointer;
   transition: background-color 250ms var(--timing-fn);
+  margin-left: 24px;
 }
 
 .subscription-btn:hover,
@@ -775,6 +776,10 @@ ul {
   flex-direction: column;
 }
 
+.form-label {
+  margin-bottom: 8px;
+}
+
 .label-text {
   display: block;
   font-weight: 400;
@@ -788,7 +793,6 @@ ul {
 .input-container {
   display: block;
   position: relative;
-  margin-bottom: 8px;
 }
 
 .input-icon {
@@ -875,6 +879,15 @@ ul {
 
 .form-checkbox:focus + .label-checkbox span {
   border-color: #404bbf;
+}
+
+.contract-terms {
+  color: var(--title-text-color);
+}
+
+.contract-terms:hover,
+.contract-terms:focus {
+  color: #404bbf;
 }
 
 .modal-submit-btn {
